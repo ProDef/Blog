@@ -6,6 +6,7 @@ Blog::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
   resources :posts do
     resources :comments
+    resources :votes
   end
   # You can have the root of your site routed with "root"
    root 'welcome#index'

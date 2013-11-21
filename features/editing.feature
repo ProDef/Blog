@@ -19,14 +19,6 @@ Feature: Editing posts
   	When I confirm popup
   	Then I should not see "happy" or "he says we're happy"
 
-  @javascript
-  @create_post
-  Scenario: Editing a post without a title
-     Given I have edited a post with a title "Hi" and with text "I now have no title"
-     Then I should see the error "Title can't be blank"
-
-
-
 
 
 
